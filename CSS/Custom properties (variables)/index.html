@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Variables</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+      <div class="grid">
+        <div class="box">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            ducimus et dolorum, provident debitis amet aperiam quasi sint eius?
+            Et!
+          </p>
+        </div>
+        <div class="box">
+          <h1>Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            eveniet quaerat totam voluptatem! Aperiam harum officia rerum esse
+            dolorum molestiae.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //Get --box-main-color from css in js
+      const box = document.querySelector(".box");
+      const boxStyles = getComputedStyle(box);
+      const boxMainColor = boxStyles.getPropertyValue("--box-main-color");
+
+      //Set header color to color retrieved before
+      const header = document.querySelector("#main-header");
+      header.style.setProperty("--header-bg-color", boxMainColor);
+    </script>
+  </body>
+</html>

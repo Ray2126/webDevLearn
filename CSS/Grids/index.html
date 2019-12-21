@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Grids</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /*
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        */
+        grid-gap: 1em;
+      }
+
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas,
+        fugit quae explicabo ut consectetur tenetur enim eligendi blanditiis
+        mollitia ullam perspiciatis facere, quia quaerat, necessitatibus soluta
+        consequatur repudiandae dolore! Magni voluptatum, non dolorum itaque
+        fugit accusamus ipsa aliquam maiores esse perspiciatis eveniet pariatur
+        tempore voluptate incidunt sequi in laboriosam eligendi cumque labore
+        nesciunt quod. Ducimus rem sunt odit repellendus. Repellendus minus
+        aliquam ullam, distinctio consequuntur neque impedit, aperiam nihil sit
+        nesciunt commodi perferendis tempora praesentium eum error ea
+        laboriosam!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam ad
+        pariatur laborum! Vitae repellat id dolorum, officia iste hic tenetur,
+        laboriosam nulla rerum quaerat quibusdam reiciendis harum voluptatum
+        distinctio.
+      </div>
+
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptas,
+        fugit quae explicabo ut consectetur tenetur enim eligendi blanditiis
+        mollitia ullam perspiciatis facere, quia quaerat, necessitatibus soluta
+        consequatur repudiandae dolore! Magni voluptatum, non dolorum itaque
+        fugit accusamus ipsa aliquam maiores esse perspiciatis eveniet pariatur
+        tempore voluptate incidunt sequi in laboriosam eligendi cumque labore
+        nesciunt quod. Ducimus rem sunt odit repellendus. Repellendus minus
+        aliquam ullam, distinctio consequuntur neque impedit, aperiam nihil sit
+        nesciunt commodi perferendis tempora praesentium eum error ea
+        laboriosam!
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam ad
+        pariatur laborum! Vitae repellat id dolorum, officia iste hic tenetur,
+        laboriosam nulla rerum quaerat quibusdam reiciendis harum voluptatum
+        distinctio.
+      </div>
+    </div>
+  </body>
+</html>
